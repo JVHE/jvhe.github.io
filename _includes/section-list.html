@@ -19,11 +19,28 @@
         {% endfor %}
       </p>
     </div>
-    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
-      {%- if item.quote -%}
-        <p class="quote">{{ item.quote }}</p>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content-wrapper">
+      {%- if item.image -%}
+        <div class="content-with-image">
+          <div class="content-image-section no-print">
+            <img src="{{ item.image | relative_url }}" alt="{{ item.title }}" class="project-image" />
+          </div>
+          <div class="content-divider"></div>
+          <div class="content-text-section">
+            {%- if item.quote -%}
+              <p class="quote">{{ item.quote }}</p>
+            {%- endif -%}
+            {{ item.description | strip | markdownify }}
+          </div>
+        </div>
+      {%- else -%}
+        <div class="content-text-section">
+          {%- if item.quote -%}
+            <p class="quote">{{ item.quote }}</p>
+          {%- endif -%}
+          {{ item.description | strip | markdownify }}
+        </div>
       {%- endif -%}
-      {{ item.description | strip | markdownify }}
     </div>
   </div>
 {% endfor %}
