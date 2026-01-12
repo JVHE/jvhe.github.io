@@ -5,9 +5,10 @@ version: 2
 # Personal info
 name: 이정배
 title: Backend Developer
-github_username: JVHE
-phone: 📱 010-5650-9303
-email: 📧 jeongbae1212@gmail.com
+email_title: 📧
+email: jeongbae1212@gmail.com
+phone_title: 📱
+phone: 010-5650-9303
 
 # Dark Mode (true/false/never)
 darkmode: never
