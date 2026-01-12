@@ -19,11 +19,23 @@ about_content: |
   
   6년간 모바일 클라이언트부터 백엔드 인프라까지 서비스의 전 계층을 경험하며, 기술적 제약을 비즈니스 기회로 전환하는 데 집중해 왔습니다.  
   
-  - **성능 최적화**: Kafka 이벤트 토픽 분리 및 비동기 처리 구조 개선을 통해 **DB 업데이트 쿼리 부하를 96% 감소**시킨 성과가 있습니다.  
-  - **인프라 주도권**: 클라우드 PaaS의 기술적 한계를 극복하기 위해 **Docker 기반 Elasticsearch 클러스터를 직접 구축**하고, 상용 서비스 중단 없는 마이그레이션을 완수했습니다.  
-  - **데이터 신뢰성**: 분산 환경에서 발생할 수 있는 데이터 정합성 문제를 Kafka와 Redis를 활용해 해결하는 등 안정적인 시스템 설계를 지향합니다.  
+  **성능 최적화**: Kafka 이벤트 토픽 분리 및 비동기 처리 구조 개선을 통해 **DB 업데이트 쿼리 부하를 96% 감소**시킨 성과가 있습니다.  
+  **인프라 주도권**: 클라우드 PaaS의 기술적 한계를 극복하기 위해 **Docker 기반 Elasticsearch 클러스터를 직접 구축**하고, 상용 서비스 중단 없는 마이그레이션을 완수했습니다.  
+  **데이터 신뢰성**: 분산 환경에서 발생할 수 있는 데이터 정합성 문제를 Kafka와 Redis를 활용해 해결하는 등 안정적인 시스템 설계를 지향합니다.  
 
 content:
+  - title: 기술 역량
+    layout: list
+    content:
+      - layout: left
+        title: Backend Frameworks
+        description: |
+          **Java / Spring Boot**: JPA/Hibernate, Spring Batch  
+          **Database**: MySQL, Elasticsearch, Redis  
+          **Messaging**: **Kafka**를 활용한 이벤트 기반 아키텍처 및 비동기 처리  
+          **Caching**: Caffeine(Local), Redis(Global) 2계층 캐시 전략, TTL 기반 캐시 정책 설계    
+          **Infra/DevOps**: Docker, Jenkins, NCP(Naver Cloud Platform)
+
   - title: Experience
     layout: list
     content:
@@ -34,10 +46,10 @@ content:
         quote: >
           클라우드 네이티브 환경의 EMR(전자 의료 기록), PHR(개인 건강 기록) 서비스 백엔드 고도화 및 검색 엔진 구축
         description: |
-          * **이벤트 기반 동기화 구조 개선**: 단일 이벤트 소스 기반 일관성 보장 정책에서 운영 중 기능 추가로 인한 리소스 낭비를 해결하기 위해 관심사별 5개 토픽으로 분리하여 **DB 부하 96% 절감** (일평균 3,500회 → 150회)
-          * **인프라 자립화 및 검색엔진 마이그레이션 수행**: NCP PaaS의 제약을 극복하기 위해 Elasticsearch 클러스터 직접 구축, 무중단 마이그레이션 수행  
-          * **검색 품질 고도화**: Nori 형태소 분석기 도입 및 가중치 실험 자동화를 위한 튜닝 어드민 개발로 검색 품질 개선  
-          * **분산 데이터 일관성 보장**: k8s multi pod 환경에서 Kafka 브로드캐스트 방식으로 다중 인스턴스 간 일관성 유지
+          **이벤트 기반 동기화 구조 개선**: 단일 이벤트 소스 기반 일관성 보장 정책에서 운영 중 기능 추가로 인한 리소스 낭비를 해결하기 위해 관심사별 5개 토픽으로 분리하여 **DB 부하 96% 절감** (일평균 3,500회 → 150회)   
+          **인프라 자립화 및 검색엔진 마이그레이션 수행**: NCP PaaS의 제약을 극복하기 위해 Elasticsearch 클러스터 직접 구축, 무중단 마이그레이션 수행  
+          **검색 품질 고도화**: Nori 형태소 분석기 도입 및 가중치 실험 자동화를 위한 튜닝 어드민 개발로 검색 품질 개선  
+          **분산 데이터 일관성 보장**: k8s multi pod 환경에서 Kafka 브로드캐스트 방식으로 다중 인스턴스 간 일관성 유지
 
       - layout: left
         title: Dreamfora
@@ -46,9 +58,9 @@ content:
         quote: >
           글로벌 100만 유저 목표관리 서비스의 클라이언트 최적화 및 백엔드 관리 시스템 구축
         description: |
-          * **성능 최적화**: Semaphore 기반 동시성 제어 및 Lazy Loading, Local DB 도입으로 **로딩 시간 80% 단축** (10초 → 2초).  
-          * **백오피스 인프라 구축**: 유저 피드 관리, 신고 시스템 및 이용 제한 기능을 포함한 커뮤니티 관리 시스템 개발  
-          * **글로벌 서비스 운영**: 5000명에서 100만명까지 서비스 확장에 맞춘 기능 개선(다국어, 통계, 알림) 및 안정화 작업 수행
+          **성능 최적화**: Semaphore 기반 동시성 제어 및 Lazy Loading, Local DB 도입으로 **로딩 시간 80% 단축** (10초 → 2초)  
+          **백오피스 인프라 구축**: 유저 피드 관리, 신고 시스템 및 이용 제한 기능을 포함한 커뮤니티 관리 시스템 개발  
+          **글로벌 서비스 운영**: 5000명에서 100만명까지 서비스 확장에 맞춘 기능 개선(다국어, 통계, 알림) 및 안정화 작업 수행
 
       - layout: left
         title: UNIST (울산과학기술원)
@@ -57,47 +69,10 @@ content:
         quote: >
           학사 졸업
         description: |
-          * **연구 인턴십 (2016.08 - 2017.06)**: SSL 연구실에서 하둡 인메모리 캐시 시뮬레이터 개발, CUDA 프로그래밍 경험
-          * **졸업 프로젝트**: LSQUIC(QUIC 프로토콜) Android 이식 프로젝트 수행
-          * **팀 프로젝트**: ClassMate (그룹과외 앱) – Adaptive Streaming, Screen Drawing 구현
+          **연구 인턴십 (2016.08 - 2017.06)**: SSL 연구실에서 하둡 인메모리 캐시 시뮬레이터 개발, CUDA 프로그래밍 경험  
+          **졸업 프로젝트**: LSQUIC(QUIC 프로토콜) Android 이식 프로젝트 수행  
+          **팀 프로젝트**: ClassMate (그룹과외 앱) – Adaptive Streaming, Screen Drawing 구현  
 
-  # 프로젝트 상세 부분 (에피소드 상세 정리 내용 반영)
-  - title: Key Projects & Technical Challenges
-    layout: list
-    content:
-      - layout: left
-        title: Elasticsearch 자립 구축 및 무중단 마이그레이션
-        sub_title: "PaaS의 한계를 넘어선 인프라 주도권 확보"
-        caption: Elasticsearch, Docker, Nori, Spring Boot
-        description: |
-          * **Challenge**: NCP PaaS의 버전(7.7) 제한 및 형태소 분석기(Nori) 설치 불가로 인한 검색 품질 저하 발생.
-          * **Solution**: 
-            * Docker 기반 3-Node ES 클러스터 직접 설계 및 구축.
-            * **무중단 전환 전략**: 기존 PaaS와 신규 클러스터에 데이터를 병렬로 적재(Dual Write)하고 검증 후 트래픽을 안전하게 전환.
-            * **검색 튜닝 자동화**: 수백 개의 검색어를 동시 테스트하는 '튜닝 어드민'을 개발하여 가중치 실험 사이클 단축.
-          * **Result**: "신익순소" 등 미검색 이슈 100% 해결 및 운영 업무 효율화.
-
-      - layout: left
-        title: Kafka 기반 병원 정보 동기화 아키텍처 개선
-        sub_title: "메시지 설계 변경만으로 DB 부하 96% 절감"
-        caption: Kafka, Spring Boot, MySQL
-        description: |
-          * **Challenge**: 단일 토픽 사용으로 인해 무관한 데이터 변경 시에도 전체 서비스가 재호출되는 리소스 낭비 발생.
-          * **Solution**: 
-            * 관심사 분리(Domain Partitioning)를 통해 단일 토픽을 5개로 세분화.
-            * 실시간 변경이 불필요한 데이터를 **15분 단위로 양자화(Quantization)**하여 이벤트 발행 빈도 최적화.
-          * **Result**: 일평균 DB 업데이트 쿼리 **3,500회 → 150회로 감소**, 시스템 안정성 확보.
-
-      - layout: left
-        title: 분산 환경 데이터 정합성 보장 (Multi-Pod Cache Sync)
-        sub_title: "Kafka 브로드캐스트를 활용한 로컬 캐시 동기화"
-        caption: Kafka, AtomicReference, Kubernetes
-        description: |
-          * **Challenge**: K8s 멀티 포드 환경에서 특정 포드의 캐시만 갱신되어 발생하는 데이터 불일치 문제.
-          * **Solution**: 
-            * Kafka의 Consumer Group을 포드별로 고유하게 설정하여 **브로드캐스트 방식** 구현. 모든 인스턴스가 동시에 캐시 갱신 이벤트를 수신하도록 설계.
-            * `AtomicReference`와 `Lock-free` 방식을 활용해 조회 성능을 유지하면서 메모리 내 데이터 일관성 보장.
-          * **Result**: 별도의 Redis Pub/Sub 인프라 추가 없이 기존 자원만으로 고성능 데이터 정합성 달성.
   - title: 주요 프로젝트 상세
     layout: list
     content:
@@ -107,23 +82,29 @@ content:
         caption: Elasticsearch, Docker, Spring Boot, Kibana
         description: |
           **프로젝트 개요**: 병원 검색 서비스의 전체 데이터를 NCP PaaS(Search Engine Service)에서 VPC에 Elasticsearch 클러스터 직접 구축 및 마이그레이션  
+          
           **문제**: "이정배 소아청소년과"를 "이정배소아"와 같은 띄어쓰기 없는 검색 실패 문제 발생. NCP PaaS(Elasticsearch 7.7.0)의 버전 제한 및 플러그인 직접 설치시 기술지원 불가 정책 등의 제약으로 검색 품질 개선 어려움
-          **해결**:
+          
+          **해결**:  
             * Docker를 활용한 **3-Node Elasticsearch 클러스터 직접 구축** (Master-Slave 구조) 및 **병렬 운영을 활용한 검증 및 무중단 트래픽 전환**  
             * Nori 형태소 분석 플러그인 설치로 한글 검색 품질 개선  
             * Elasticsearch 파라미터 조작 및 검색어 수백 개를 동시에 요청·비교하는 튜닝 어드민 개발로 가중치 실험 효율 개선  
-          **성과**: 한글 검색 정확도 대폭 향상 및 검색 튜닝 업무 효율성 개선
+          
+          **성과**: 한글 검색 정확도 대폭 향상 및 검색 튜닝 업무 효율성 개선  
 
       - layout: left
         title: Kafka 이벤트 기반 병원 정보 동기화 아키텍처 개선
         sub_title: 데이터 일관성을 유지하며 서버 부하 96% 감소
         caption: Kafka, Spring Boot, MySQL
         description: |
-          **프로젝트 개요**: 병원 정보 동기화 시스템의 Kafka 이벤트 토픽 분리 및 처리 구조 개선
-          **문제**: 일관성을 위한 단일 이벤트 소스 기반 제로 페이로드 정책으로 데이터 일관성은 보장되었으나, 운영 중 예상 진료대기시간 등 기능 추가로 진료 대기인원 변경 시에도 이미지 호출 등 불필요한 리소스 재호출 발생 (일평균 이벤트 1,400건)  
+          **프로젝트 개요**: 병원 정보 동기화 시스템의 Kafka 이벤트 토픽 분리 및 처리 구조 개선  
+          
+          **문제**: 일관성을 위한 단일 이벤트 소스 기반 Zero-Payload 정책으로 일관성은 보장되었으나, 운영 중 예상 진료대기시간 등 기능 추가로 진료 대기인원 변경 시에도 이미지 호출 등 불필요한 리소스 재호출 발생 (일평균 이벤트 1,400건)
+          
           **해결**:  
             * 단일 토픽을 관심사(진료 대기 인원, 서비스 구독, 병원정보, 설정 변경 등)에 따라 **5개 토픽으로 분리 설계**  
             * 관심사를 '진료 대기 인원'에서 '진료 예상 대기시간'으로 전환하고, 구간으로 분리하여 불필요한 이벤트 발생 억제  
+          
           **성과**: **병원 정보 변경 이벤트 1,400건 → 15건 (99% 감소)**, **DB 업데이트 쿼리 3,500회 → 150회 (96% 감소)** (8월 3주차 vs 9월 3주차 비교), 데이터 일관성 유지하며 서버 자원 소모량 안정화
 
       - layout: left
@@ -131,55 +112,62 @@ content:
         sub_title: Kafka 브로드캐스트를 활용한 고성능 일관성 유지
         caption: Kafka, Spring Boot, Java (AtomicReference)
         description: |
-          * **문제**: Kubernetes 환경에서 특정 Pod를 지정해 갱신할 수 없는 구조로, 다중 인스턴스 환경에서 데이터 변경 시 인스턴스 간 캐시 불일치 문제 발생  
-          * **해결**:  
+          **문제**: Kubernetes 환경에서 특정 Pod를 지정해 갱신할 수 없는 구조로, 다중 인스턴스 환경에서 데이터 변경 시 인스턴스 간 캐시 불일치 문제 발생
+          
+          **해결**:  
             * **Kafka 브로드캐스트 방식**: 컨슈머 그룹 내 모든 인스턴스가 동일 메시지를 소비하도록 구현하여 변경 사항(CUD)을 전체 인스턴스에 전파 (Hazelcast, Redis Pub/Sub 대신 기존 인프라 활용)  
             * 유효 기간이 겹치는 경우 수정일시 기준 최신 값 선택 로직 구현  
             * **AtomicReference**: 단일 인스턴스 내에서 동시 조회 요청 시 메모리에 로딩된 코드값의 일관성 보장 (Lock-free 방식)  
-          * **성과**: 읽기 부하가 높은 상황에서도 시간대별 일관된 데이터 응답 보장 및 서비스 신뢰도 확보
+          
+          **성과**: 읽기 부하가 높은 상황에서도 시간대별 일관된 데이터 응답 보장 및 서비스 신뢰도 확보
 
       - layout: left
         title: Elasticsearch 기반 병원/약국 검색 서비스 구축
         sub_title: 공공데이터 기반 고성능 검색 시스템 구축
         caption: Elasticsearch, Spring Batch, Spring Boot
         description: |
-          * **주요 업무**:  
-            * 매일 자정 국립중앙의료원 공공데이터를 수집/가공하여 인덱싱하는 배치 파이프라인 구축  
-            * 병원/약국 검색, 찜 기능 개발(진료과목, 영업 여부 필터 등)  
-            * **LCS(Longest Common Subsequence) 알고리즘**을 활용한 신규 병원과 기존 데이터 간 유사도 검증 프로세스 구현 (전화번호, 주소, 병원명의 공백/특문 차이 고려, 유사도 80% 전후에서 유의미한 결과)  
-          * **성과**: 공공데이터 기반 검색 시스템 구축 및 중복 병원 노출 최소화를 통한 검색 품질 향상
+          **주요 업무**:  
+            매일 자정 국립중앙의료원 공공데이터를 수집/가공하여 인덱싱하는 배치 파이프라인 구축  
+            병원/약국 검색, 찜 기능 개발(진료과목, 영업 여부 필터 등)  
+            **LCS(Longest Common Subsequence) 알고리즘**을 활용한 신규 병원과 기존 데이터 간 유사도 검증 프로세스 구현 (전화번호, 주소, 병원명의 공백/특문 차이 고려, 유사도 80% 전후에서 유의미한 결과)
+          
+          **성과**: 공공데이터 기반 검색 시스템 구축 및 중복 병원 노출 최소화를 통한 검색 품질 향상
+          
 
       - layout: left
         title: 운영 효율화를 위한 백오피스(Admin) 개발, 동기화 예약 기능 추가
         sub_title: 수동 업무를 웹 UI로 자동화하여 운영 효율성 향상
         caption: Spring Boot, Spring Security
         description: |
-          * **주요 업무**:  
+          **주요 업무**:  
             * 부가서비스 가입 병원 매핑 및 관리 기능 구현 (기존 수동 DB 조작 업무를 웹 UI로 자동화)  
             * 신규 개원의원을 공공데이터 반영 전 클레 검색에 노출할 수 있는 병원생성 기능 개발  
             * 개원일자에 맞춘 노출 예약 기능으로 운영팀의 업무 유연성 확보  
-          * **문제 해결**: 초기 사용법 설명 세션에서 기능 중심 설명으로 인한 이해도 저하 → 사용 흐름 중심 문서화 및 교육 자료 제공으로 개선  
-          * **성과**: 안전하고 편리한 병원 매핑 프로세스 구축, 실수 위험 제거 및 작업 효율성 향상
+          
+          **문제 해결**: 초기 사용법 설명 세션에서 기능 중심 설명으로 인한 이해도 저하 → 사용 흐름 중심 문서화 및 교육 자료 제공으로 개선  
+          
+          **성과**: 안전하고 편리한 병원 매핑 프로세스 구축, 실수 위험 제거 및 작업 효율성 향상
 
       - layout: left
-        title: 주소 검색 MSA 캐시 전략 개선
-        sub_title: 2계층 캐시 전략으로 외부 API 의존도 감소
+        title: 주소 검색 MSA 캐시 전략 도입 검토 및 구현
+        sub_title: 2계층 캐시 전략 시뮬레이션 및 성능 검증
         caption: Caffeine, Redis, Spring Boot
         description: |
-          * **문제**: EMR 필드의 address_search MSA에서 정부 API(juso.go.kr) 중복 호출로 인한 비용 문제 발생  
-          * **해결**:  
+          **문제**: EMR 필드의 address_search MSA에서 정부 API(juso.go.kr) 중복 호출로 인한 비용 문제 발생  
+          
+          **접근**:  
             * 1주일치 검색 결과 9만건 분석 결과, 대도시/시군구 중심의 중복 호출 패턴 확인  
-            * **Caffeine(Local) + Redis(Global) 2계층 캐시 전략** 도입  
-            * TTL을 당일 초기화로 설정 (정부 데이터 일일 갱신 정책 반영)  
-            * 버킷 수 및 TTL 최적화를 통한 캐시 정책 설계  
-          * **성과**: 캐시 히트율 20% 이상 달성, 외부 API 의존도 감소 및 비용 절감
+            * Caffeine(Local) + Redis(Global) 2계층 캐시 전략 도입
+            * 버킷 수 및 TTL 변경 등 캐시정책에 따른 시뮬레이션 코드 작성 및 성능 검증
+          
+          **결과**: 서버 캐시 히트율 20%대 확인. 지역성이 강한 EMR 특성 상, 서버측에서 주소 캐시 정책은 유의미하지 않음을 확인
 
       - layout: left
         title: Dreamfora 모바일 클라이언트 개발
         sub_title: 글로벌 100만 유저 서비스의 클라이언트 최적화 및 기능 구현
         caption: Xamarin.Forms (C#), Swift, SQLite, MVVM
         description: |
-          * **V1 & V2 개발 (2019.04 - 2022.02)**:
+          **V1 & V2 개발 (2019.04 - 2022.02)**:
             * MVP 프로젝트 인수 후 혼자서 약 2년간 개발 및 유지보수
             * Cross-platform framework인 Xamarin.Forms를 이용하여 Android, iOS 동시 개발 및 런칭
             * 목표 관리, 목표 추천, 수행 기록 및 통계, 백업 및 동기화, 소셜 로그인, 다국어화, 애니메이션 등 전반적인 기능 구현
@@ -187,29 +175,14 @@ content:
             * Notification, Social Login, Data Sync 로직을 Project 단위로 분리하여 코드 간 의존성 감소
             * Custom Layout, Custom Renderer를 사용하여 Xamarin에서 제공하지 않는 View를 기획/디자인 요구사항에 맞게 구현
             * 테마 시스템 구현으로 같은 기능을 다른 UI 구성으로 제공
-          * **iOS Native 전환 (2022.01 - 2022.08)**:
+          
+          **iOS Native 전환 (2022.01 - 2022.08)**:
             * Swift/SwiftUI 기반으로 iOS Native 전환 프로젝트 참여
             * 설계, 로직, 소셜 로그인 담당
-          * **Feed Admin (2022.09 - 2023.04)**:
+          
+          **Feed Admin (2022.09 - 2023.04)**:
             * 게시글 검색/정렬/필터링, 사용자 이용제한 기능 등 구현
             * Next.js 기반 백오피스 개발
-
-  - title: 기술 역량
-    layout: list
-    content:
-      - layout: left
-        title: Backend Frameworks
-        description: |
-          * **Java / Spring Boot**: JPA/Hibernate, Querydsl, Spring Security, Spring Batch 전문성 보유  
-          * **Concurrency**: AtomicReference, Semaphore 등을 활용한 동시성 제어 및 최적화  
-
-      - layout: left
-        title: Data & Infrastructure
-        description: |
-          * **Database**: MySQL, PostgreSQL, **Elasticsearch(Cluster 구축 및 튜닝)**, Redis  
-          * **Messaging**: **Kafka**를 활용한 이벤트 기반 아키텍처 및 비동기 처리  
-          * **Caching**: Caffeine(Local), Redis(Global) 2계층 캐시 전략, TTL 기반 캐시 정책 설계  
-          * **Infra/DevOps**: Docker, Kubernetes, NCP(Naver Cloud Platform), GitLab CI, AWS(학습 중)  
 
   - title: Personal Projects
     layout: list
@@ -220,9 +193,8 @@ content:
         link: https://github.com/JVHE/LSQUIC-for-android-implementation
         quote: QUIC 프로토콜 이해를 위한 저수준 라이브러리 포팅
         description: |
-          * **내용**: litespeedtech의 C 라이브러리를 Android NDK 환경에 이식  
-          * **학습**: OSI 계층과 TCP/IP 프로토콜 상세 학습, Wireshark를 통한 QUIC 프로토콜 분석 (TCP 대신 UDP 사용 확인)  
-          * **의의**: HTTP/3의 기반이 되는 QUIC 프로토콜의 핸드셰이크 및 스트림 처리 과정을 깊이 있게 학습. 암호학 기초 학습을 통해 데이터 송수신 시 성능 최적화에 대한 통찰력 향상  
+          **내용**: JNI를 활용하여 litespeedtech의 C 라이브러리를 Android NDK 환경에 이식  
+          **학습**: OSI 계층과 TCP/IP 프로토콜 상세 학습, Wireshark를 통한 QUIC 프로토콜 분석 (TCP 대신 UDP 사용 확인)  
 
       - layout: left
         border: weak
@@ -230,8 +202,8 @@ content:
         link: https://github.com/JVHE/PetUs
         quote: 대량 미디어 처리와 실시간성을 고려한 SNS 백엔드 설계
         description: |
-          * **기술**: PHP, MySQL, FCM, Vidyo.io  
-          * **기능**: 위치 기반 카페 찾기 쿼리 최적화 및 실시간 라이브 스트리밍 연동 아키텍처 설계  
+          **기술**: PHP, MySQL, FCM, Vidyo.io  
+          **기능**: 위치 기반 카페 찾기 쿼리 최적화 및 실시간 라이브 스트리밍 연동 아키텍처 설계  
 
 # Footer
 footer_show_references: false
