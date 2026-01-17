@@ -188,12 +188,12 @@ content:
           **학습**: OSI 계층과 TCP/IP 프로토콜 상세 학습, Wireshark를 통한 QUIC 프로토콜 분석 (TCP 대신 UDP 사용 확인)
       - layout: left
         border: weak
-        title: PetUS (Real-time Media SNS)
-        link: https://github.com/JVHE/PetUs
-        quote: 대량 미디어 처리와 실시간성을 고려한 SNS 백엔드 설계
+        title: ClassMate (1:1 과외 동영상 스트리밍 앱)
+        link: https://github.com/JVHE/ClassMate
+        quote: MPEG-DASH 기반 Adaptive Streaming 및 실시간 화면 공유 기능 구현
         description: |
-          **기술**: PHP, MySQL, FCM, Vidyo.io    
-          **기능**: 위치 기반 카페 찾기 쿼리 최적화 및 실시간 라이브 스트리밍 연동 아키텍처 설계
+          **기술**: Java, Android, PHP, MySQL, Apache, MPEG-DASH, MediaProjection, ExoPlayer  
+          **기능**: 네트워크 환경에 따른 적응형 스트리밍(MPEG-DASH), 실시간 화면 미러링 및 Screen Drawing 서비스, 웹서버 연동
 # Footer
 footer_show_references: false
 
