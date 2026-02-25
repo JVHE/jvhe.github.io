@@ -17,15 +17,15 @@ darkmode: never
 about_title: 소개
 about_profile_image: images/profile.jpeg
 about_content: |
-  **문제를 집요하게 추적하고, 원인을 구조적으로 제거하는 과정에서 보람을 느끼는 개발자 이정배입니다.**  
+  **문제를 분석하고, 원인을 구조적으로 제거하는 과정에서 보람을 느끼는 개발자 이정배입니다.**    
   
-  100만 유저 규모의 앱 서비스 개발부터 백엔드 전환까지 경험하며, 단순한 기능 구현보다 **'재발하지 않는 근본적인 해결책'**을 찾는 데 집중해 왔습니다.  
+  100만 유저 규모의 글로벌 앱 서비스 개발부터 백엔드 엔지니어링까지, 사용자 접점과 시스템의 심장부를 모두 경험했습니다.
   
-  백엔드 개발자로 이직 후 SpringBoot 기반 MSA 환경에서 EMR, PHR 서비스 개발을 하며 Kafka 기반 이벤트 처리, Elasticsearch 검색엔진 구축/운영 등 다양한 백엔드 기술을 다뤘습니다.  
-  
-  특히, **병원/약국 검색 시스템의 무중단 마이그레이션**과 **이벤트 정밀도 최적화를 통한 불필요한 DB Write 96% 절감** 등 시스템 안정화와 운영 효율화에 기여했습니다.  
-  
-  기술 도입의 화려함보다 **데이터 기반의 객관적 분석**을 우선시하며, 문제의 본질을 해결하여 비즈니스의 성장을 뒷받침합니다.  
+  이러한 이력을 바탕으로 클라이언트의 요구사항을 깊이 이해하면서도, 서버 사이드에서 분산 환경의 데이터 정합성과 메시징 아키텍처 최적화를 통해 비즈니스의 안정성을 확보하는 데 강점이 있습니다.
+  핵심 역량
+  - 도메인 기반 메시징 설계: Kafka 토픽 분리 및 노이즈 제거를 통한 시스템 결합도 해소
+  - 검색 엔진 인프라 자립화: Elasticsearch 클러스터 직접 구축 및 검색 품질(Recall) 고도화
+  - 비용 효율적 의사결정: 데이터 분석을 통한 무분별한 인프라 도입 방지 및 리소스 최적화
 
 content:
   - title: 경력 사항
@@ -36,45 +36,18 @@ content:
         sub_title: 백엔드 개발(서비스개발 1팀)
         caption: 2023.07 - 2024.12
         description: |
-          - 병원/약국 검색엔진 구축 및 무중단 마이그레이션(Elasticsearch 자체 클러스터 운영)  
-          - EMR(전자 의료 기록) - PHR(개인 건강 기록) 간 병원 정보 동기화 시스템 개발 및 고도화  
-          - Kafka 기반 이벤트 처리 아키텍처 개선으로 DB Write 96% 감소(일 3,500회 → 150회)  
-          - Kafka Broadcast를 활용한 실시간 캐시 동기화 및 운영 효율 개선
+          - 검색엔진 구축 및 마이그레이션: 병원/약국 배치 수집, 검색엔진 적용 및 Elasticsearch 자체 클러스터 구축 및 무중단 전환  
+          - 이벤트 기반 아키텍처 최적화: Kafka 이벤트 노이즈 제거 및 전파 범위 최적화로 시스템 부하 감소  
+          - 실시간 캐시 동기화: Kafka Broadcast 및 Zero-Payload 전략으로 다중 인스턴스 간 데이터 정합성 보장
       - layout: left
         title: Dreamfora
         sub_title: 모바일 App 개발 및 유지보수
         caption: 2019.04 - 2023.05
         description: |
-          - 중장기 목표관리 어플리케이션 'Dreamfora' Android/iOS 앱 개발 및 유지보수
+          - 100만 규모 글로벌 목표관리 앱 'Dreamfora' Android/iOS 개발 및 유지보수
+          - 저사양 기기 대응을 위한 렌더링 최적화 및 화면 파편화 해결
           - 주요 기능: 목표 설정/관리, 습관 형성, 알림, 통계, 다국어, 애니메이션, 테마, 커뮤니티 등
-          - 백오피스 관리 시스템 개발: 커뮤니티, 사용자 관리, 큐레이팅 콘텐츠 관리 등
 
-      - layout: left
-        title: UNIST (울산과학기술원)
-        sub_title: Computer Science Engineering(주) / Mathematical Sciences(부)
-        caption: 2013.03 - 2019.02
-        description: |
-          - 졸업 프로젝트: LSQUIC(QUIC 프로토콜) Android 이식 프로젝트 수행  
-          - 연구 인턴십: Hadoop 인메모리 캐시 시뮬레이터 개발, CUDA 프로그래밍 경험
-  - title: 기술 역량
-    layout: list
-    content:
-      - layout: text
-        sub_title: 프레임워크
-        description: |
-          Spring Boot(Java), Spring Batch, JPA/Hibernate
-      - layout: text
-        sub_title: 데이터베이스
-        description: |
-          MySQL, Elasticsearch, Redis
-      - layout: text
-        sub_title: 메시징 & 캐시
-        description: |
-          Kafka: 이벤트 기반 아키텍처 설계, Redis/Caffeine: 2계층 캐시 설계 및 구현
-      - layout: text
-        sub_title: 검색 엔진
-        description: |
-          Elasticsearch: 클러스터 구축 및 배치를 포함한 검색엔진 운영
   - title: 주요 프로젝트 상세
     layout: list
     content:
@@ -110,8 +83,15 @@ content:
           **개요**: 병원 정보 동기화 시스템의 메시지 전파 구조를 개선하여 시스템 자원 낭비 최소화  
           
           **상황**  
-          단일 이벤트 토픽 구조로 인해 특정 정보(진료 대기 인원) 변경 시 무관한 리소스(병원/진료실 정보 등)까지 중복 수신  
-          진료 대기 인원의 미세한 변동이 수시로 DB Write 연산을 유발하여, 유의미하지 않은 데이터 동기화 반복  
+          서비스 초창기 빠른 개발을 위해 단일 토픽 구조를 선택했으나, 서비스 규모 확대와 기능 추가로 인해 병목이 되기 시작함
+          
+          **초기 설계 배경**
+          - 6개월 만에 전체 서비스 런칭이 요구되는 상황에서, 빠른 개발과 정합성 확보를 위해 단일 갱신 이벤트 토픽 및 zero-payload 메시징 전략 채택
+          - 서비스 초창기 소규모 고객사를 대상으로 했기 때문에, 단일 토픽 구조로도 충분히 대응 가능하다고 판단
+          
+          **문제 발생 시점**
+          - 서비스 규모 확대와 기능 추가(예상 진료대기시간 등)가 진행되면서 해당 토픽에 다양한 관심사가 혼재
+          - 모니터링 과정에서 특정 정보(진료 대기 인원) 변경 시 무관한 리소스(병원/진료실 정보 등)까지 중복 수신되는 현상 발견
           
           **목표**: 이벤트 노이즈 제거 및 도메인 중심의 데이터 전파 전략 수립
           
@@ -129,7 +109,7 @@ content:
         title: Kafka Broadcast를 활용한 실시간 캐시 동기화 및 운영 효율 개선
         caption: Kafka, Spring Boot
         description: |
-          **개요**: 다중 인스턴스 환경에서 Zero-Payload 기반의 실시간 캐시 일관성 보장  
+          **개요**: 다중 인스턴스 환경에서 Kafka를 활용한 실시간 캐시 일관성 보장
           
           **상황**  
           해당 조회 서비스는 **읽기 요청이 매우 많고, 갱신 빈도가 적은 서비스**(기초 정보)  
@@ -139,16 +119,15 @@ content:
           **목표**: 재시작 없는 실시간 동기화 및 일관된 데이터 응답 보장
           
           **행동**  
-          - **Kafka 브로드캐스트 튜닝**: 컨슈머 그룹 내 모든 컨슈머가 동일 메시지를 각각 소비하도록 일괄 파티션 할당 방식으로 구현하여 변경 사항(CUD)을 전체 인스턴스에 전파  
-          - **기술 선택 이유**: Hazelcast, Redis Pub/Sub, debezium 등 다양한 대안 검토 후, 기존 인프라(Kafka)를 활용하여 추가 인프라 비용/공수 최소화  
-          - **Zero-Payload 메시징**: 메시지 도착 시 DB에 조회를 하는 구조로, 메시지 손실/중복 상황에서도 일관성 보장  
-          - **AtomicReference**: Lock-free 방식으로 단일 인스턴스 내에서 동시 조회 요청 시 메모리에 로딩된 코드값의 일관성 보장  
+          - CUD API 호출을 받은 인스턴스가 데이터를 갱신한 후 **Kafka를 통해 다른 인스턴스들에게 결과를 전파**하는 구조로 변경
+          - **Kafka 브로드캐스트 튜닝**: 토픽을 단일 파티션으로 구성하고, 컨슈머 그룹 내 모든 인스턴스가 동일 메시지를 각각 소비하도록 일괄 파티션 할당 방식으로 튜닝
+          - 갱신 데이터를 압축하여 Kafka 메시지로 전파함으로서, **모든 인스턴스가 DB를 재조회하지 않고도 최신 데이터를 받을 수 있도록** 설계
           
           **결과**  
           - **Zero-Downtime 기반의 설정 동기화** 구축: 전체 인스턴스 순차 재시작(3분) 없이 수 초 내 전 인스턴스 데이터 일관성 확보
-          - 읽기 부하가 높은 상황에서도 시간대별 일관된 데이터 응답 보장
       - layout: left
         title: 주소 검색 서비스 캐시 전략 수립 및 PoC
+        border: weak
         sub_title: 데이터 기반 시뮬레이션을 통한 불필요한 인프라 도입 방지
         caption: Caffeine, Redis, Spring Boot
         description: |
@@ -163,24 +142,47 @@ content:
           
           **행동**  
           - **기술 구현**: Caffeine(Local) + Redis(Global) 2계층 캐시 아키텍처 설계 및 PoC 구현  
-            - 1) Local 캐시: Caffeine 사용, 인스턴스 내 초고속 응답 처리  
-            - Global 캐시 만료 시점에 Local 캐시 동시 제거 정책 적용으로 데이터 정합성 확보  
+            - 1) Local 캐시: Caffeine 사용, Global 캐시 만료 시점에 Local 캐시 무효화 정책으로 데이터 정합성 확보  
             - 2) Global 캐시: Redis 사용, 다중 인스턴스 간 캐시 일관성 보장  
-            - 캐시 정책 수립: TTL(Time-To-Live) 설정, 버킷 수 결정 등 다양한 캐시 정책 수립  
           - **분석 및 의사결정**  
             - **로그 기반 시뮬레이션**: 1주일치 검색 로그(9만 건, 중복 제외 3만건)를 추출하여 시뮬레이션 수행. Hit rate 예상치가 20% 미만임을 확인  
             - **비용 대비 효용 판단**: Redis 인프라 유지 및 데이터 정합성 관리 공수가 성능 이득보다 크다고 판단하여 **최종 도입 철회 결정**
-          - **대안 제시**:
+          
+          **대안 제시**:
             - 지역 특성이 강한 주소 데이터 특성 상, 서버 캐시보다는 클라이언트 측 캐시 도입 검토 권고
             - 장애시 Circuit Breaker를 활용하여 대안용 주소 조회 API 반영 검토  
+
+      - layout: left
+        title: 목표관리 앱 Dreamfora 개발
+        sub_title: 저사양 기기 최적화 및 크로스플랫폼 아키텍처 고도화
+        caption: Xamarin.Forms, C#
+        description: |
+          **개요**: 중장기 목표관리 앱 'Dreamfora' 개발 및 성능개선
           
-          **결과**  
-          데이터 기반의 의사결정으로 개발/운영 리소스 낭비 원천 차단, 서킷 브레이커 도입 등으로 방향을 선회하는 계기 마련
+          - **아키텍처 설계**: iOS/Android의 상이한 동작을 통합하기 위해 'IPressBackButton' 등 공통 인터페이스와 추상 레이아웃 클래스 설계, 적용
+          - **렌더링 최적화**: 저사양 기기의 메모리 부족으로 인한 렌더링 오류 해결을 위한 리소스 트릭 적용 및 프레임워크 자체 오류 핸들링 
+          - **UX 성능 개선**: **Pre-loading** 및 **Lazy Loading**을 적용하여 사용자 체감 전환 속도 대폭 향상
+          - **글로벌 대응**: 6개 국어(.resx 활용) 및 알림 시스템 구축
+  - title: 기술 역량
+    layout: list
+    content:
+      - layout: top-middle
+        border: weak
+        caption: Spring Boot(Java),  JPA/Hibernate,  Elasticsearch,  Kafka,  redis,  MySQL
+  - title: 학력 및 연구 경험
+    layout: list
+    content:
+      - layout: left
+        title: UNIST (울산과학기술원)
+        sub_title: Computer Science Engineering(주) / Mathematical Sciences(부)
+        caption: 2013.03 - 2019.02
+        description: |
+          - 졸업 프로젝트: LSQUIC(QUIC 프로토콜) Android 이식 프로젝트 수행  
+          - 학부 연구 인턴십: Hadoop 인메모리 캐시 시뮬레이터 개발을 통한 분산 처리 시스템 연구, CUDA 프로그래밍 경험
   - title: 개인 프로젝트
     layout: list
     content:
       - layout: left
-        border: weak
         title: LSQUIC for Android Implementation
         sub_title: QUIC 프로토콜 이해를 위한 저수준 라이브러리 포팅
         caption: JNI, Android NDK, C, QUIC, Wireshark
