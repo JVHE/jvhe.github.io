@@ -4,7 +4,7 @@ version: 2
 
 # Personal info
 name: 이정배
-title: Backend Developer
+title: Software Engineer
 email_title: 📧
 email: jeongbae1212@gmail.com
 phone_title: 📱
@@ -17,13 +17,14 @@ darkmode: never
 about_title: 소개
 about_profile_image: images/profile.jpeg
 about_content: |
-  **설계의 트레이드오프를 인지하고, 병목의 원인을 구조적으로 제거하는 데 집중하는 6년차 개발자 이정배입니다.**
-  
-    1년 6개월간 클라우드 EMR(전자의무기록) 기업의 Spring Boot 기반 MSA 환경에서 Kafka, Elasticsearch 중심의 데이터 파이프라인을 설계하고 운영했습니다. 병원/약국 공공데이터 수집, 검색엔진 구축/무중단 전환, 독립된 두 서비스(EMR-PHR)의 데이터 동기화 등을 담당했습니다.  
-    기술 도입 시에는 직관에 의존하지 않고 로그 기반 시뮬레이션으로 효용을 검증한 뒤 판단하는 방식으로 일했습니다.  
-    분산 환경에서 발생할 수 있는 병목을 고려하여 실용적인 아키텍처를 추구합니다.  
-    
-    이전에는 목표관리 앱 'Dreamfora'를 4년간 개발했습니다. 2번째 멤버로 합류하여 12인 규모로 팀이 성장하는 동안 앱 출시부터 100만 다운로드까지 클라이언트 개발을 주도하며, 사용자 접점부터 백엔드 데이터 흐름까지 서비스의 전체 흐름을 이해하는 시야를 길렀습니다.
+  **문제를 분석하고, 해결하는 과정에 보람을 느끼는 6년차 개발자 이정배입니다.**
+
+    1년 6개월간 클라우드 EMR(전자의무기록) 기업의 Spring Boot 기반 MSA 환경에서 Kafka, Elasticsearch 중심의 데이터 파이프라인을 설계하고 운영했습니다. 민감 의료 데이터를 다루는 환경에서 검색엔진 전환, 서비스 간 데이터 동기화, 환자 정보 전달 등을 담당했습니다.
+    기술 도입 시에는 직관에 의존하지 않고 로그 기반 시뮬레이션으로 효용을 검증한 뒤 판단하는 방식으로 일했습니다.
+    분산 환경에서 발생할 수 있는 병목을 고려하여 실용적인 구조를 추구합니다.  
+
+    이전에는 목표관리 앱 'Dreamfora'에 2번째 직원으로 합류하여 100만 다운로드까지 4년간 클라이언트 개발을 주도했고, 7개월간 큐레이팅 컨텐츠 관리 어드민을 직접 설계하고 운영했습니다.
+
 content:
   - title: 경력 사항
     layout: list
@@ -33,18 +34,21 @@ content:
         sub_title: 백엔드 개발(서비스개발 1팀)
         caption: 2023.07 - 2024.12
         description: |
-          - **[다운타임 0초]** 제약 조건 극복을 위한 Elasticsearch 클러스터 자체 구축 및 상용 서비스 무중단 마이그레이션 완수
-          - **[시스템 부하 최적화]** Kafka 토픽 도메인 격리 및 관심사 재정의를 통해 불필요한 이벤트 전파(노이즈) 99% 차단
-          - **[재시작 3분 -> 0초]** Thundering Herd 리스크를 고려한 Kafka Broadcast 기반 캐시 무중단 동기화
+          - **[다운타임 0초]** PaaS 제약 극복을 위한 Elasticsearch 클러스터 자체 구축 및 상용 서비스 무중단 마이그레이션 완수
+          - **[이벤트 노이즈 제거]** Kafka 토픽 도메인 격리 및 관심사 재정의로 불필요한 동기화 이벤트 99% 감소, 연관 DB 갱신 96% 축소
+          - **[데이터 반영 3분 → 수 초]** Kafka Broadcast 기반 캐시 무중단 동기화
           - **[오버엔지니어링 방어]** 상용 로그 시뮬레이션 기반 캐시 효용성 검증(Hit Rate 20% 미만) 및 인프라 도입 철회
+          - **[병원 매핑 어드민]** 프론트 개발자와 협업하여 고객사-공공데이터 병원 매핑 어드민 구축, Spring Batch 기반 일일 공공데이터 수집 및 신규/폐업 의원 자동 감지
+          - **[검색 튜닝 어드민]** 검색엔진 파라미터 변경 효과를 배포 없이 검증할 수 있는 샌드박스 도구 풀스택 개발 (React/TypeScript + Spring Boot)
       - layout: left
         title: Dreamfora
         sub_title: 모바일 App 개발 리드
         caption: 2019.04 - 2023.05
         description: |
           - **[아키텍처 설계]** 글로벌 목표관리 앱 'Dreamfora' Android/iOS 크로스플랫폼 아키텍처 설계 및 개발
-          - **[성능 최적화]** 저사양 기기 리소스 렌더링 최적화, 화면 파편화 해결 및 프레임워크 자체 오류 핸들링
-          - **[UX 개선]** 글로벌 6개 국어 대응 및 주요 흐름 레이아웃 Pre Loading 적용으로 사용자 체감 성능(UX) 대폭 향상
+          - **[안정성 개선]** 프로젝트 전체 리팩토링을 통한 크래시 레이트 개선 (2%대 → 0.1%대, 다수 이슈 해결을 통한 점진적 감소)
+          - **[UX 개선]** 글로벌 6개 국어 대응 및 주요 흐름 레이아웃 Pre Loading 적용으로 사용자 체감 성능 향상
+          - **[큐레이팅 어드민]** 사내 콘텐츠 관리 어드민 개발 (Next.js, React, TypeScript, Prisma)
   - title: 주요 프로젝트 상세
     layout: list
     content:
@@ -67,12 +71,12 @@ content:
           - Nori 한글 형태소 분석기 연동 및 커스텀 동의어 사전(진료과목 약어 등)을 적용하여 인덱스 맵핑 구성 완료
 
           **결과**
-          - 상용 서비스 사용자 영향도 없이 다운타임 0초로 100% 무중단 마이그레이션 완수
+          - 상용 서비스 사용자 영향 없이 다운타임 0초로 무중단 마이그레이션 완수
           - 즉시 활용 가능한 형태소 기반 텍스트 분석 인프라 확보
 
       - layout: left
         border: weak
-        title: Kafka 도메인 분할 및 관심사 재정의로 DB 부하 96% 감소 및 이벤트 파이프라인 최적화
+        title: Kafka 도메인 분할 및 관심사 재정의를 통한 이벤트 파이프라인 최적화
         caption: Kafka, Spring Boot, MySQL
         description: |
           **개요**: MSA 환경 내 이기종 시스템 간(EMR-PHR) 메시지 전파 아키텍처 개선
@@ -88,8 +92,8 @@ content:
           - 관심사 재정의: 이벤트 발행 빈도를 근본적으로 제어하기 위해, 비즈니스 요건을 분석하여 관심사를 '진료 대기 인원(명)'에서 **'예상 진료 대기시간(분)'**으로 전환. 유의미한 시간 임계치 변동 시에만 이벤트를 발행하도록 프로듀서 로직 고도화
 
           **결과**
-          - 비즈니스 로직과 무관한 상태 변경 이벤트 전파량을 99% 이상 차단하여 컨슈머 노드의 이벤트 처리 지연 원천 예방
-          - 불필요한 이벤트 소비로 인한 연관 DB 부하를 대폭 제거하고(96%), 도메인 분리로 신규 서비스 추가 시 기존 구독자에 영향 없는 유연한 구조 확보
+          - 불필요한 동기화 이벤트 99% 감소, 연관 DB 갱신 96% 축소
+          - 도메인 분리로 신규 서비스 추가 시 기존 구독자에 영향 없는 유연한 구조 확보
 
       - layout: left
         border: weak
@@ -111,7 +115,9 @@ content:
           **결과**
           - 매 갱신마다 발생하던 조회 인스턴스 전체 롤링 재시작(3분) 프로세스 완전 제거  
           - DB 커넥션 병목 없이 수 초 내에 전 인스턴스의 캐시 일관성을 확보하는 무중단 동기화 환경 구축
+
       - layout: left
+        border: weak
         title: 상용 로그 시뮬레이션 기반 캐시 도입 철회 및 장애 격리
         caption: Caffeine, Redis, Spring Boot
         description: |
@@ -129,6 +135,26 @@ content:
           - 직관이 아닌 객관적 데이터 증명으로 불필요한 인프라 투자 및 오버엔지니어링 방지
           - 문제의 본질인 "장애 전파 차단"에 집중하여 Circuit Breaker(Resilience4J) 기반의 API 격리 및 백업 주소 API로의 Fallback 적용
 
+      - layout: left
+        title: 검색엔진 파라미터 튜닝 검증 도구 개발
+        caption: React, TypeScript, Spring Boot, Elasticsearch
+        description: |
+          **개요**: 검색엔진 파라미터 변경의 효과를 배포 없이 검증할 수 있는 어드민 도구 개발
+
+          **상황 및 목표**  
+          Elasticsearch 검색 품질 개선 시, 파라미터(가중치, 분석기 설정 등) 변경마다 배포가 필요하여 빠른 실험이 어려움.  
+          기획팀과 검색팀이 검색 결과 변동을 직관적으로 확인할 수단이 부재.  
+
+          **행동**
+          - 검증환경에 상용 데이터를 미러링하여, 파라미터 변경을 배포 없이 즉시 반영할 수 있는 샌드박스 환경 구성  
+          - 300~500개 검색어를 동시 요청하여 현행 상용 검색 결과와 튜닝 후 결과의 랭크 변동을 자동 비교하는 대시보드 개발 (React/TypeScript)  
+          - 주요 고객사 병원의 검색 순위 변동을 초록색/빨간색으로 시각화하여 기획팀이 즉시 판단 가능하도록 구성  
+          - 프론트엔드(React/TypeScript)와 백엔드(Spring Boot) 모두 직접 구현
+
+          **결과**  
+          - 기획팀과 검색팀이 배포 없이 파라미터 튜닝 아이디어를 즉시 검증할 수 있는 환경 확보  
+          - 검색 품질 개선 의사결정의 근거를 정성적 판단에서 데이터 기반 비교로 전환
+
   - title: 학력
     layout: list
     content:
@@ -144,13 +170,13 @@ content:
     content:
       - layout: text
         sub_title: 언어 및 프레임워크
-        description: Java, Spring Boot, Spring Batch, JPA/Hibernate, Resilience4J
+        description: Java, Spring Boot, Spring Batch, JPA/Hibernate, TypeScript, React, Next.js
       - layout: text
         sub_title: 데이터베이스 및 검색엔진
-        description: MySQL, Redis, Elasticsearch/Opensearch (Docker 자체 클러스터 구축, 마이그레이션)
+        description: MySQL, Redis, Elasticsearch (Docker 자체 클러스터 구축, 마이그레이션)
       - layout: text
-        sub_title: 메시징 및 아키텍처 설계
-        description: Kafka (도메인 분할, Broadcast 파티션 튜닝, 페이로드 최적화), Circuit Breaker, Docker
+        sub_title: 메시징 및 인프라
+        description: Kafka (도메인 분할, Broadcast 패턴, 페이로드 최적화), Circuit Breaker, Docker
 # Footer
 footer_show_references: false
 
